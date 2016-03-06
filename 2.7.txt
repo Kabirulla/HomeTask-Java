@@ -1,6 +1,6 @@
-/*Пользователь вводит с клавиатуры время начала и время завершения телефонного
-разговора (часы, минуты и секунды). Посчитать стоимость разговора, если 
-стоимость минуты составляет 15 копеек, с учётом посекундной тарификации.*/
+/*РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РІРІРѕРґРёС‚ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹ РІСЂРµРјСЏ РЅР°С‡Р°Р»Р° Рё РІСЂРµРјСЏ Р·Р°РІРµСЂС€РµРЅРёСЏ С‚РµР»РµС„РѕРЅРЅРѕРіРѕ
+СЂР°Р·РіРѕРІРѕСЂР° (С‡Р°СЃС‹, РјРёРЅСѓС‚С‹ Рё СЃРµРєСѓРЅРґС‹). РџРѕСЃС‡РёС‚Р°С‚СЊ СЃС‚РѕРёРјРѕСЃС‚СЊ СЂР°Р·РіРѕРІРѕСЂР°, РµСЃР»Рё 
+СЃС‚РѕРёРјРѕСЃС‚СЊ РјРёРЅСѓС‚С‹ СЃРѕСЃС‚Р°РІР»СЏРµС‚ 15 РєРѕРїРµРµРє, СЃ СѓС‡С‘С‚РѕРј РїРѕСЃРµРєСѓРЅРґРЅРѕР№ С‚Р°СЂРёС„РёРєР°С†РёРё.*/
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -22,19 +22,19 @@ public class JavaApplication1 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner in = new Scanner(System.in);
-        System.out.println("\tВведите время начала: ");
-        System.out.print("Введите час: ");
+        System.out.println("\tГ‚ГўГҐГ¤ГЁГІГҐ ГўГ°ГҐГ¬Гї Г­Г Г·Г Г«Г : ");
+        System.out.print("Г‚ГўГҐГ¤ГЁГІГҐ Г·Г Г±: ");
         int HoursStart = in.nextInt();
-        System.out.print("Введите минуты: ");
+        System.out.print("Г‚ГўГҐГ¤ГЁГІГҐ Г¬ГЁГ­ГіГІГ»: ");
         int MinutesStart=in.nextInt();
-        System.out.print("Введите секунды: ");
+        System.out.print("Г‚ГўГҐГ¤ГЁГІГҐ Г±ГҐГЄГіГ­Г¤Г»: ");
         int SecondsStart=in.nextInt();
-        System.out.println("\tВведите время конца: ");
-        System.out.print("Введите час: ");
+        System.out.println("\tГ‚ГўГҐГ¤ГЁГІГҐ ГўГ°ГҐГ¬Гї ГЄГ®Г­Г¶Г : ");
+        System.out.print("Г‚ГўГҐГ¤ГЁГІГҐ Г·Г Г±: ");
         int HoursEnd = in.nextInt();
-        System.out.print("Введите минуты: ");
+        System.out.print("Г‚ГўГҐГ¤ГЁГІГҐ Г¬ГЁГ­ГіГІГ»: ");
         int MinutesEnd=in.nextInt();
-        System.out.print("Введите секунды: ");
+        System.out.print("Г‚ГўГҐГ¤ГЁГІГҐ Г±ГҐГЄГіГ­Г¤Г»: ");
         int SecondsEnd=in.nextInt();
         double minPrice=0.15;
         double StartTime=(((HoursEnd*60)+MinutesEnd+(SecondsEnd*0.01))-((HoursStart*60)+MinutesStart+(SecondsStart*0.01)))*minPrice;
