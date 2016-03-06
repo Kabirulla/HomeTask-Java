@@ -1,0 +1,43 @@
+/*Пользователь вводит с клавиатуры время начала и время завершения телефонного
+разговора (часы, минуты и секунды). Посчитать стоимость разговора, если 
+стоимость минуты составляет 15 копеек, с учётом посекундной тарификации.*/
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication1;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Kabirulla
+ */
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner in = new Scanner(System.in);
+        System.out.println("\tВведите время начала: ");
+        System.out.print("Введите час: ");
+        int HoursStart = in.nextInt();
+        System.out.print("Введите минуты: ");
+        int MinutesStart=in.nextInt();
+        System.out.print("Введите секунды: ");
+        int SecondsStart=in.nextInt();
+        System.out.println("\tВведите время конца: ");
+        System.out.print("Введите час: ");
+        int HoursEnd = in.nextInt();
+        System.out.print("Введите минуты: ");
+        int MinutesEnd=in.nextInt();
+        System.out.print("Введите секунды: ");
+        int SecondsEnd=in.nextInt();
+        double minPrice=0.15;
+        double StartTime=(((HoursEnd*60)+MinutesEnd+(SecondsEnd*0.01))-((HoursStart*60)+MinutesStart+(SecondsStart*0.01)))*minPrice;
+        System.out.println(StartTime);
+    }
+}
