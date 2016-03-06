@@ -1,13 +1,13 @@
 /*
-Рассчитать общую массу всех планет Солнечной системы. Вычислить среднее
+Р Р°СЃСЃС‡РёС‚Р°С‚СЊ РѕР±С‰СѓСЋ РјР°СЃСЃСѓ РІСЃРµС… РїР»Р°РЅРµС‚ РЎРѕР»РЅРµС‡РЅРѕР№ СЃРёСЃС‚РµРјС‹. Р’С‹С‡РёСЃР»РёС‚СЊ СЃСЂРµРґРЅРµРµ
 
-арифметическое масс планет. Затем - массу каждой планеты в процентном 
+Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ РјР°СЃСЃ РїР»Р°РЅРµС‚. Р—Р°С‚РµРј - РјР°СЃСЃСѓ РєР°Р¶РґРѕР№ РїР»Р°РЅРµС‚С‹ РІ РїСЂРѕС†РµРЅС‚РЅРѕРј 
 
-соотношении, если принять за 100% общую массу всех планет. Во сколько раз 
+СЃРѕРѕС‚РЅРѕС€РµРЅРёРё, РµСЃР»Рё РїСЂРёРЅСЏС‚СЊ Р·Р° 100% РѕР±С‰СѓСЋ РјР°СЃСЃСѓ РІСЃРµС… РїР»Р°РЅРµС‚. Р’Рѕ СЃРєРѕР»СЊРєРѕ СЂР°Р· 
 
-масса самой крупной планеты больше чем сумма масс всех остальных планет? Все 
+РјР°СЃСЃР° СЃР°РјРѕР№ РєСЂСѓРїРЅРѕР№ РїР»Р°РЅРµС‚С‹ Р±РѕР»СЊС€Рµ С‡РµРј СЃСѓРјРјР° РјР°СЃСЃ РІСЃРµС… РѕСЃС‚Р°Р»СЊРЅС‹С… РїР»Р°РЅРµС‚? Р’СЃРµ 
 
-результаты – показать на экране. Рекомендуется использование типа BigDecimal.
+СЂРµР·СѓР»СЊС‚Р°С‚С‹ вЂ“ РїРѕРєР°Р·Р°С‚СЊ РЅР° СЌРєСЂР°РЅРµ. Р РµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ С‚РёРїР° BigDecimal.
 */
 
 /*
@@ -29,7 +29,7 @@ public class JavaApplication2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //Масса каждой из планет
+        //ГЊГ Г±Г±Г  ГЄГ Г¦Г¤Г®Г© ГЁГ§ ГЇГ«Г Г­ГҐГІ
         BigDecimal Venera=new BigDecimal(4.81068*(10^24));
         BigDecimal Zemlya=new BigDecimal(5.97600*(10^24));
         BigDecimal Mars=new BigDecimal(0.63345*(10^24));
@@ -39,14 +39,14 @@ public class JavaApplication2 {
         BigDecimal Saturn=new BigDecimal(561.80376*(10^24));
         BigDecimal Uran=new BigDecimal(86.05440*(10^24));
         BigDecimal Ypiter=new BigDecimal(1876.64328*(10^24));
-        //Масса всех планет
+        //ГЊГ Г±Г±Г  ГўГ±ГҐГµ ГЇГ«Г Г­ГҐГІ
         BigDecimal AllMass=new BigDecimal(Venera.doubleValue()+Zemlya.doubleValue()+Mars.doubleValue()+Merkuriy.doubleValue()+Neptun.doubleValue()+Pluton.doubleValue()+Saturn.doubleValue()+Uran.doubleValue()+Ypiter.doubleValue());
-        //Среднее арифметическое
+        //Г‘Г°ГҐГ¤Г­ГҐГҐ Г Г°ГЁГґГ¬ГҐГІГЁГ·ГҐГ±ГЄГ®ГҐ
         BigDecimal SredniyeArifmeticheskoe=new BigDecimal(AllMass.doubleValue()/9);
-         System.out.println("Среднее арифметическое всех планет:");
+         System.out.println("Г‘Г°ГҐГ¤Г­ГҐГҐ Г Г°ГЁГґГ¬ГҐГІГЁГ·ГҐГ±ГЄГ®ГҐ ГўГ±ГҐГµ ГЇГ«Г Г­ГҐГІ:");
         System.out.println(SredniyeArifmeticheskoe.toString());
-        //Масса каждой планеты относительно массы всех планет в процентном соотношении
-        System.out.println("Масса планет относительно массы всех планет в процентном соотношении:");
+        //ГЊГ Г±Г±Г  ГЄГ Г¦Г¤Г®Г© ГЇГ«Г Г­ГҐГІГ» Г®ГІГ­Г®Г±ГЁГІГҐГ«ГјГ­Г® Г¬Г Г±Г±Г» ГўГ±ГҐГµ ГЇГ«Г Г­ГҐГІ Гў ГЇГ°Г®Г¶ГҐГ­ГІГ­Г®Г¬ Г±Г®Г®ГІГ­Г®ГёГҐГ­ГЁГЁ
+        System.out.println("ГЊГ Г±Г±Г  ГЇГ«Г Г­ГҐГІ Г®ГІГ­Г®Г±ГЁГІГҐГ«ГјГ­Г® Г¬Г Г±Г±Г» ГўГ±ГҐГµ ГЇГ«Г Г­ГҐГІ Гў ГЇГ°Г®Г¶ГҐГ­ГІГ­Г®Г¬ Г±Г®Г®ГІГ­Г®ГёГҐГ­ГЁГЁ:");
         BigDecimal AllMassVenera=new BigDecimal(Venera.doubleValue()*100/AllMass.doubleValue());
         BigDecimal AllMassZemlya=new BigDecimal(Zemlya.doubleValue()*100/AllMass.doubleValue());
         BigDecimal AllMassMars=new BigDecimal(Mars.doubleValue()*100/AllMass.doubleValue());
@@ -56,17 +56,17 @@ public class JavaApplication2 {
         BigDecimal AllMassSaturn=new BigDecimal(Saturn.doubleValue()*100/AllMass.doubleValue());
         BigDecimal AllMassUran=new BigDecimal(Uran.doubleValue()*100/AllMass.doubleValue());
         BigDecimal AllMassYpiter=new BigDecimal(Ypiter.doubleValue()*100/AllMass.doubleValue());
-        System.out.println("Масса Венеры:"+AllMassVenera+"%");
-        System.out.println("Масса Земли:"+AllMassZemlya+"%");
-        System.out.println("Масса Марса:"+AllMassMars+"%");
-        System.out.println("Масса Меркурия:"+AllMassMerkuriy+"%");
-        System.out.println("Масса Нептуна:"+AllMassNeptun+"%");
-        System.out.println("Масса Плутона:"+AllMassPluton+"%");
-        System.out.println("Масса Сатурна:"+AllMassSaturn+"%");
-        System.out.println("Масса Урана:"+AllMassUran+"%");
-        System.out.println("Масса Юпитера:"+AllMassYpiter+"%");
+        System.out.println("ГЊГ Г±Г±Г  Г‚ГҐГ­ГҐГ°Г»:"+AllMassVenera+"%");
+        System.out.println("ГЊГ Г±Г±Г  Г‡ГҐГ¬Г«ГЁ:"+AllMassZemlya+"%");
+        System.out.println("ГЊГ Г±Г±Г  ГЊГ Г°Г±Г :"+AllMassMars+"%");
+        System.out.println("ГЊГ Г±Г±Г  ГЊГҐГ°ГЄГіГ°ГЁГї:"+AllMassMerkuriy+"%");
+        System.out.println("ГЊГ Г±Г±Г  ГЌГҐГЇГІГіГ­Г :"+AllMassNeptun+"%");
+        System.out.println("ГЊГ Г±Г±Г  ГЏГ«ГіГІГ®Г­Г :"+AllMassPluton+"%");
+        System.out.println("ГЊГ Г±Г±Г  Г‘Г ГІГіГ°Г­Г :"+AllMassSaturn+"%");
+        System.out.println("ГЊГ Г±Г±Г  Г“Г°Г Г­Г :"+AllMassUran+"%");
+        System.out.println("ГЊГ Г±Г±Г  ГћГЇГЁГІГҐГ°Г :"+AllMassYpiter+"%");
         BigDecimal TheBiggest=new BigDecimal(AllMass.doubleValue()/AllMassYpiter.doubleValue());
-        System.out.println("Во сколько раз самая большая планета меньше чем масса всех остальных планет:");
-        System.out.println("В "+TheBiggest+" раз");
+        System.out.println("Г‚Г® Г±ГЄГ®Г«ГјГЄГ® Г°Г Г§ Г±Г Г¬Г Гї ГЎГ®Г«ГјГёГ Гї ГЇГ«Г Г­ГҐГІГ  Г¬ГҐГ­ГјГёГҐ Г·ГҐГ¬ Г¬Г Г±Г±Г  ГўГ±ГҐГµ Г®Г±ГІГ Г«ГјГ­Г»Гµ ГЇГ«Г Г­ГҐГІ:");
+        System.out.println("Г‚ "+TheBiggest+" Г°Г Г§");
     }
 }
