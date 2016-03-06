@@ -1,5 +1,5 @@
 /*
-Вывести на экран каркас параллелепипеда размерностью AxBxC.
+Р’С‹РІРµСЃС‚Рё РЅР° СЌРєСЂР°РЅ РєР°СЂРєР°СЃ РїР°СЂР°Р»Р»РµР»РµРїРёРїРµРґР° СЂР°Р·РјРµСЂРЅРѕСЃС‚СЊСЋ AxBxC.
 */
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -21,11 +21,11 @@ public class JavaApplication2 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner in=new Scanner(System.in);
-        System.out.println("Введите длину:");
+        System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ Г¤Г«ГЁГ­Гі:");
         int lenght=in.nextInt();
-        System.out.println("Введите ширину:");
+        System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГёГЁГ°ГЁГ­Гі:");
         int width=in.nextInt();
-        System.out.println("Введите высоту:");
+        System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГўГ»Г±Г®ГІГі:");
         int height=in.nextInt();
         for(int i=0;i<width;i++)
         {
