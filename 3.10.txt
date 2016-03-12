@@ -1,0 +1,72 @@
+/*
+Рассчитать общую массу всех планет Солнечной системы. Вычислить среднее
+
+арифметическое масс планет. Затем - массу каждой планеты в процентном 
+
+соотношении, если принять за 100% общую массу всех планет. Во сколько раз 
+
+масса самой крупной планеты больше чем сумма масс всех остальных планет? Все 
+
+результаты – показать на экране. Рекомендуется использование типа BigDecimal.
+*/
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication2;
+import java.math.BigDecimal;
+
+/**
+ *
+ * @author Kabirulla
+ */
+public class JavaApplication2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        //Масса каждой из планет
+        BigDecimal Venera=new BigDecimal(4.81068*(10^24));
+        BigDecimal Zemlya=new BigDecimal(5.97600*(10^24));
+        BigDecimal Mars=new BigDecimal(0.63345*(10^24));
+        BigDecimal Merkuriy=new BigDecimal(0.32868*(10^24));
+        BigDecimal Neptun=new BigDecimal(101.59200*(10^24));
+        BigDecimal Pluton=new BigDecimal(0.01195*(10^24));
+        BigDecimal Saturn=new BigDecimal(561.80376*(10^24));
+        BigDecimal Uran=new BigDecimal(86.05440*(10^24));
+        BigDecimal Ypiter=new BigDecimal(1876.64328*(10^24));
+        //Масса всех планет
+        BigDecimal AllMass=new BigDecimal(Venera.doubleValue()+Zemlya.doubleValue()+Mars.doubleValue()+Merkuriy.doubleValue()+Neptun.doubleValue()+Pluton.doubleValue()+Saturn.doubleValue()+Uran.doubleValue()+Ypiter.doubleValue());
+        //Среднее арифметическое
+        BigDecimal SredniyeArifmeticheskoe=new BigDecimal(AllMass.doubleValue()/9);
+         System.out.println("Среднее арифметическое всех планет:");
+        System.out.println(SredniyeArifmeticheskoe.toString());
+        //Масса каждой планеты относительно массы всех планет в процентном соотношении
+        System.out.println("Масса планет относительно массы всех планет в процентном соотношении:");
+        BigDecimal AllMassVenera=new BigDecimal(Venera.doubleValue()*100/AllMass.doubleValue());
+        BigDecimal AllMassZemlya=new BigDecimal(Zemlya.doubleValue()*100/AllMass.doubleValue());
+        BigDecimal AllMassMars=new BigDecimal(Mars.doubleValue()*100/AllMass.doubleValue());
+        BigDecimal AllMassMerkuriy=new BigDecimal(Merkuriy.doubleValue()*100/AllMass.doubleValue());
+        BigDecimal AllMassNeptun=new BigDecimal(Neptun.doubleValue()*100/AllMass.doubleValue());
+        BigDecimal AllMassPluton=new BigDecimal(Pluton.doubleValue()*100/AllMass.doubleValue());
+        BigDecimal AllMassSaturn=new BigDecimal(Saturn.doubleValue()*100/AllMass.doubleValue());
+        BigDecimal AllMassUran=new BigDecimal(Uran.doubleValue()*100/AllMass.doubleValue());
+        BigDecimal AllMassYpiter=new BigDecimal(Ypiter.doubleValue()*100/AllMass.doubleValue());
+        System.out.println("Масса Венеры:"+AllMassVenera+"%");
+        System.out.println("Масса Земли:"+AllMassZemlya+"%");
+        System.out.println("Масса Марса:"+AllMassMars+"%");
+        System.out.println("Масса Меркурия:"+AllMassMerkuriy+"%");
+        System.out.println("Масса Нептуна:"+AllMassNeptun+"%");
+        System.out.println("Масса Плутона:"+AllMassPluton+"%");
+        System.out.println("Масса Сатурна:"+AllMassSaturn+"%");
+        System.out.println("Масса Урана:"+AllMassUran+"%");
+        System.out.println("Масса Юпитера:"+AllMassYpiter+"%");
+        BigDecimal TheBiggest=new BigDecimal(AllMass.doubleValue()/AllMassYpiter.doubleValue());
+        System.out.println("Во сколько раз самая большая планета меньше чем масса всех остальных планет:");
+        System.out.println("В "+TheBiggest+" раз");
+    }
+}
